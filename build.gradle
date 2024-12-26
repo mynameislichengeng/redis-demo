@@ -14,16 +14,18 @@ java {
 }
 
 repositories {
-//	mavenCentral()
+	maven { url 'https://maven.aliyun.com/repository/public' }
+	maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
 	// 替换为腾讯云的Maven仓库
 	maven { url 'https://mirrors.cloud.tencent.com/repository/maven-public/' }
+//	mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'redis.clients:jedis:5.2.0'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+//	implementation 'org.springframework.boot:spring-boot-starter'
+//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+//	implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
 tasks.named('test') {
