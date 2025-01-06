@@ -1,4 +1,4 @@
-package org.example.lc.service;
+package com.lc.redis.jedis.starter.service;
 
 /**
  * @author by licheng01

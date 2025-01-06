@@ -1,4 +1,4 @@
-package org.example.lc.config;
+package com.lc.redis.jedis.starter.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

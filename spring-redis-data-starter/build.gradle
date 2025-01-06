@@ -11,15 +11,16 @@ repositories {
     maven { url 'https://maven.aliyun.com/repository/public' }
     maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
     maven { url 'https://mirrors.cloud.tencent.com/repository/maven-public/' }
-//    mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
 //    implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-logging
     implementation 'org.springframework.boot:spring-boot-starter-logging'
-    implementation 'redis.clients:jedis:5.2.0'
+    implementation 'io.lettuce:lettuce-core:6.5.2.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

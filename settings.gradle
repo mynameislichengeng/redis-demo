@@ -1,4 +1,5 @@
 rootProject.name = 'redis-demo'
 include 'jedis-starter'
 include 'lettuce-starter'
+include 'spring-redis-data-starter'
 
